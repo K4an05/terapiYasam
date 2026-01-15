@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz | Rehabilitasyon Merkezi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-bar {
+            background-color: #28a745;
+            color: white;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: opacity 0.3s;
+        }
+        .top-bar a:hover {
+            opacity: 0.8;
+        }
+        .service-hero {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(40, 167, 69, 0.2);
+        }
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+        }
+        .navbar {
+            background-color: white !important;
+        }
+        .dropdown-menu {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <a href="#"><i class="fas fa-file-alt me-1"></i> B.E.P</a>
+                <a href="#"><i class="fas fa-briefcase me-1"></i> İK</a>
+                <a href="#"><i class="fas fa-question-circle me-1"></i> S.S.S</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://via.placeholder.com/150x50?text=Logo" alt="Rehabilitasyon Merkezi Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kurumsal
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="kurumsalDropdown">
+                            <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                            <li><a class="dropdown-item" href="etkinlikler.html">Etkinlikler</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html#subeler">Şubelerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+                <a href="iletisim.html" class="btn btn-success">Randevu Al</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Hizmetlerimiz</h1>
+                    <p class="lead">Profesyonel rehabilitasyon ve eğitim hizmetlerimizle çocuklarımızın gelişimine katkı sağlıyoruz. Uzman ekibimiz ve modern yaklaşımlarımızla yanınızdayız.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Özel Eğitim -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 service-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-graduation-cap fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Özel Eğitim</h5>
+                            <p class="card-text">Bireysel farklılıkları göz önünde bulundurarak hazırlanan özel eğitim programları. Her çocuğun kendi hızında ve ihtiyaçlarına uygun şekilde gelişimini destekliyoruz. Özel öğrenme güçlükleri, dikkat eksikliği ve hiperaktivite bozukluğu gibi durumlar için kapsamlı eğitim desteği sunuyoruz.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i> Bireysel eğitim programları</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Grup eğitim aktiviteleri</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Akademik destek programları</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Sosyal beceri geliştirme</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dil ve Konuşma Terapisi -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 service-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-comments fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Dil ve Konuşma Terapisi</h5>
+                            <p class="card-text">Dil gelişimi, artikülasyon, akıcılık ve ses bozuklukları için uzman dil ve konuşma terapisi hizmetleri. Çocukların iletişim becerilerini geliştirmek ve yaşam kalitelerini artırmak için bireysel ve grup terapileri sunuyoruz. Erken müdahale programları ile dil gelişimini destekliyoruz.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i> Artikülasyon terapisi</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Dil gelişimi desteği</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Akıcılık terapisi</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Ses bozuklukları tedavisi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fizik Tedavi -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 service-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-dumbbell fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Fizik Tedavi</h5>
+                            <p class="card-text">Çocukların motor gelişimini desteklemek için özel fizik tedavi programları. Kas güçlendirme, denge ve koordinasyon çalışmaları ile çocukların fiziksel gelişimini optimize ediyoruz. Serebral palsi, gelişimsel gecikmeler ve kas-iskelet sistemi sorunları için kapsamlı tedavi hizmetleri sunuyoruz.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i> Motor gelişim değerlendirmesi</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Kas güçlendirme egzersizleri</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Denge ve koordinasyon çalışmaları</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Manuel terapi teknikleri</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Otizm Spektrum Bozukluğu Eğitimi -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 service-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-puzzle-piece fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Otizm Spektrum Bozukluğu Eğitimi</h5>
+                            <p class="card-text">Otizm spektrum bozukluğu olan çocuklar için özel eğitim ve terapi programları. Uygulamalı Davranış Analizi (ABA) ve diğer kanıta dayalı yaklaşımlar kullanarak çocukların sosyal, iletişim ve öğrenme becerilerini geliştiriyoruz. Aile eğitimi ve destek programları ile süreçte yanınızdayız.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i> ABA (Uygulamalı Davranış Analizi)</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Sosyal beceri eğitimi</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Duyu bütünleme terapisi</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Aile eğitim ve destek programları</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ergoterapi -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 service-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-hand-paper fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Ergoterapi</h5>
+                            <p class="card-text">Günlük yaşam aktivitelerini kolaylaştırmak için ergoterapi hizmetleri. Çocukların bağımsız yaşam becerilerini geliştirmelerine yardımcı oluyoruz. İnce motor beceriler, yazma becerileri ve günlük yaşam aktiviteleri konusunda uzman desteği sunuyoruz.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i> Günlük yaşam aktiviteleri eğitimi</li>
+                                <li><i class="fas fa-check text-success me-2"></i> İnce motor beceri geliştirme</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Yazma becerileri desteği</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Duyu bütünleme çalışmaları</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Psikolojik Danışmanlık -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 service-card shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon">
+                                <i class="fas fa-heart fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Psikolojik Danışmanlık</h5>
+                            <p class="card-text">Çocuklar ve aileler için psikolojik danışmanlık ve destek hizmetleri. Davranış problemleri, duygusal zorluklar ve aile içi iletişim konularında uzman desteği sunuyoruz. Bireysel ve aile terapileri ile süreçte yanınızdayız.</p>
+                            <ul class="list-unstyled text-start mt-3">
+                                <li><i class="fas fa-check text-success me-2"></i> Bireysel psikolojik destek</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Aile danışmanlığı</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Davranış yönetimi</li>
+                                <li><i class="fas fa-check text-success me-2"></i> Duygusal destek programları</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Hizmetlerimiz Hakkında Daha Fazla Bilgi Alın</h2>
+            <p class="lead mb-4">Uzman ekibimizle görüşmek ve size özel eğitim planı oluşturmak için bizimle iletişime geçin.</p>
+            <a href="iletisim.html" class="btn btn-success btn-lg">İletişime Geçin</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Rehabilitasyon Merkezi. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="index.html" class="text-white me-3">Ana Sayfa</a>
+                    <a href="hizmetlerimiz.html" class="text-white me-3">Hizmetlerimiz</a>
+                    <a href="hakkimizda.html" class="text-white me-3">Hakkımızda</a>
+                    <a href="iletisim.html" class="text-white">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

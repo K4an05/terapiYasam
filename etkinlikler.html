@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlikler | Rehabilitasyon Merkezi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-bar {
+            background-color: #28a745;
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: opacity 0.3s;
+        }
+        .top-bar a:hover {
+            opacity: 0.8;
+        }
+        .events-hero {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        .event-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(40, 167, 69, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <a href="#"><i class="fas fa-file-alt me-1"></i> B.E.P</a>
+                <a href="#"><i class="fas fa-briefcase me-1"></i> İK</a>
+                <a href="#"><i class="fas fa-question-circle me-1"></i> S.S.S</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://via.placeholder.com/150x50?text=Logo" alt="Rehabilitasyon Merkezi Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kurumsal
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="kurumsalDropdown">
+                            <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                            <li><a class="dropdown-item active" href="etkinlikler.html">Etkinlikler</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html#subeler">Şubelerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+                <a href="iletisim.html" class="btn btn-success">Randevu Al</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="events-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Etkinliklerimiz</h1>
+                    <p class="lead">Çocuklarımızın sosyal gelişimini desteklemek ve ailelerimizle birlikte keyifli zamanlar geçirmek için düzenlediğimiz etkinlikler.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card event-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250?text=Etkinlik+1" class="card-img-top" alt="Etkinlik 1">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Yaklaşan Etkinlik</span>
+                            <h5 class="card-title">Aile Günü Etkinliği</h5>
+                            <p class="card-text text-muted"><i class="fas fa-calendar me-2"></i>15 Mart 2024</p>
+                            <p class="card-text">Ailelerimizle birlikte eğlenceli aktiviteler ve oyunlar. Çocuklarımızın sosyal becerilerini geliştirmek için harika bir fırsat.</p>
+                            <a href="#" class="btn btn-outline-success">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card event-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250?text=Etkinlik+2" class="card-img-top" alt="Etkinlik 2">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Geçmiş Etkinlik</span>
+                            <h5 class="card-title">Sanat Atölyesi</h5>
+                            <p class="card-text text-muted"><i class="fas fa-calendar me-2"></i>10 Şubat 2024</p>
+                            <p class="card-text">Çocuklarımızın yaratıcılıklarını ortaya çıkarmak için düzenlediğimiz sanat atölyesi etkinliği. Resim, seramik ve el sanatları çalışmaları.</p>
+                            <a href="#" class="btn btn-outline-secondary">Galeri</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card event-card shadow-sm">
+                        <img src="https://via.placeholder.com/400x250?text=Etkinlik+3" class="card-img-top" alt="Etkinlik 3">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Yaklaşan Etkinlik</span>
+                            <h5 class="card-title">Spor Günü</h5>
+                            <p class="card-text text-muted"><i class="fas fa-calendar me-2"></i>25 Mart 2024</p>
+                            <p class="card-text">Çocuklarımızın fiziksel gelişimini desteklemek için düzenlediğimiz spor günü. Eğlenceli yarışmalar ve aktiviteler.</p>
+                            <a href="#" class="btn btn-outline-success">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Rehabilitasyon Merkezi. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="index.html" class="text-white me-3">Ana Sayfa</a>
+                    <a href="hizmetlerimiz.html" class="text-white me-3">Hizmetlerimiz</a>
+                    <a href="hakkimizda.html" class="text-white me-3">Hakkımızda</a>
+                    <a href="iletisim.html" class="text-white">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

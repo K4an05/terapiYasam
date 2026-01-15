@@ -14,10 +14,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <!-- Top Bar -->
+    <div class="top-bar" style="background-color: #28a745; color: white; padding: 8px 0; font-size: 14px;">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <div class="d-flex justify-content-end">
+                <a href="#" style="color: white; text-decoration: none; margin: 0 15px;"><i class="fas fa-file-alt me-1"></i> B.E.P</a>
+                <a href="#" style="color: white; text-decoration: none; margin: 0 15px;"><i class="fas fa-briefcase me-1"></i> İK</a>
+                <a href="#" style="color: white; text-decoration: none; margin: 0 15px;"><i class="fas fa-question-circle me-1"></i> S.S.S</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
                 <img src="https://via.placeholder.com/150x50?text=Logo" alt="Rehabilitasyon Merkezi Logo" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,19 +37,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Anasayfa</a>
+                        <a class="nav-link active" href="index.html">Ana Sayfa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Hizmetlerimiz</a>
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kurumsal
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="kurumsalDropdown">
+                            <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                            <li><a class="dropdown-item" href="etkinlikler.html">Etkinlikler</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link" href="iletisim.html#subeler">Şubelerimiz</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">İletişim</a>
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
                     </li>
                 </ul>
-                <a href="#" class="btn btn-primary">Randevu Al</a>
+                <a href="iletisim.html" class="btn btn-success">Randevu Al</a>
             </div>
         </div>
     </header>
@@ -174,10 +194,10 @@
                     <p>&copy; 2023 Rehabilitasyon Merkezi. Tüm hakları saklıdır.</p>
                 </div>
                 <div class="col-md-6 text-end">
-                    <a href="#home" class="text-white me-3">Anasayfa</a>
-                    <a href="#services" class="text-white me-3">Hizmetlerimiz</a>
-                    <a href="#blog" class="text-white me-3">Blog</a>
-                    <a href="#contact" class="text-white">İletişim</a>
+                    <a href="index.html" class="text-white me-3">Ana Sayfa</a>
+                    <a href="hizmetlerimiz.html" class="text-white me-3">Hizmetlerimiz</a>
+                    <a href="hakkimizda.html" class="text-white me-3">Hakkımızda</a>
+                    <a href="iletisim.html" class="text-white">İletişim</a>
                 </div>
             </div>
         </div>

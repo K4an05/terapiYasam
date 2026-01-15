@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim ve Şubelerimiz | Rehabilitasyon Merkezi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-bar {
+            background-color: #28a745;
+            color: white;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: opacity 0.3s;
+        }
+        .top-bar a:hover {
+            opacity: 0.8;
+        }
+        .contact-hero {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        .contact-info-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            margin-bottom: 20px;
+        }
+        .form-control:focus {
+            border-color: #28a745;
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+        }
+        .btn-success {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            border: none;
+        }
+        .btn-success:hover {
+            background: linear-gradient(135deg, #20c997 0%, #28a745 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .branch-card {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        .branch-card:hover {
+            border-color: #28a745;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(40, 167, 69, 0.15);
+        }
+        .branch-card.active {
+            border-color: #28a745;
+            background-color: #f8fff9;
+        }
+        .branch-details {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+        .branch-details.active {
+            display: block;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+        }
+        .whatsapp-btn:hover {
+            background-color: #20ba5a;
+            color: white;
+            transform: scale(1.05);
+        }
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            height: 400px;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <a href="#"><i class="fas fa-file-alt me-1"></i> B.E.P</a>
+                <a href="#"><i class="fas fa-briefcase me-1"></i> İK</a>
+                <a href="#"><i class="fas fa-question-circle me-1"></i> S.S.S</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://via.placeholder.com/150x50?text=Logo" alt="Rehabilitasyon Merkezi Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hizmetlerimiz.html">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kurumsalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kurumsal
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="kurumsalDropdown">
+                            <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                            <li><a class="dropdown-item" href="etkinlikler.html">Etkinlikler</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="iletisim.html#subeler">Şubelerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+                <a href="iletisim.html" class="btn btn-success">Randevu Al</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">İletişim ve Şubelerimiz</h1>
+                    <p class="lead">Sorularınız, randevu talepleriniz veya genel bilgi almak için bizimle iletişime geçebilirsiniz. Size en kısa sürede dönüş yapacağız.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4 text-center">İletişim Formu</h3>
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Ad Soyad <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="name" name="name" required placeholder="Adınız ve soyadınız">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">E-posta <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="email" name="email" required placeholder="ornek@email.com">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Telefon</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+90 5XX XXX XX XX">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="subject" class="form-label">Konu <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="subject" name="subject" required>
+                                            <option value="">Konu seçiniz</option>
+                                            <option value="randevu">Randevu Talebi</option>
+                                            <option value="bilgi">Genel Bilgi</option>
+                                            <option value="hizmet">Hizmet Hakkında Soru</option>
+                                            <option value="diger">Diğer</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mesajınız <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required placeholder="Mesajınızı buraya yazabilirsiniz..."></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="kvkk" required>
+                                    <label class="form-check-label" for="kvkk">
+                                        <a href="#" class="text-decoration-none">KVKK Aydınlatma Metni</a>'ni okudum ve kabul ediyorum. <span class="text-danger">*</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Mesajı Gönder
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="subeler" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Şubelerimiz</h2>
+            <p class="text-center text-muted mb-5">Size en yakın şubemizi seçerek detaylı bilgi alabilirsiniz.</p>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Esenyurt Şubesi -->
+                    <div class="branch-card" onclick="toggleBranch('esenyurt')">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="mb-2"><i class="fas fa-map-marker-alt text-success me-2"></i>Esenyurt Şubesi</h4>
+                                <p class="text-muted mb-0">Esenyurt, İstanbul</p>
+                            </div>
+                            <i class="fas fa-chevron-down text-success"></i>
+                        </div>
+                        <div id="esenyurt-details" class="branch-details">
+                            <hr>
+                            <div class="mb-3">
+                                <h6><i class="fas fa-map-marker-alt text-success me-2"></i>Adres</h6>
+                                <p class="mb-0">Esenyurt Mah. Örnek Sok. No: 15/A<br>34500 Esenyurt / İstanbul</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6><i class="fas fa-phone text-success me-2"></i>Telefon</h6>
+                                <p class="mb-0">
+                                    <a href="tel:+902121234567" class="text-decoration-none">+90 212 123 45 67</a><br>
+                                    <a href="tel:+905551234567" class="text-decoration-none">+90 555 123 45 67</a>
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <h6><i class="fab fa-whatsapp text-success me-2"></i>WhatsApp</h6>
+                                <a href="https://wa.me/905551234567" target="_blank" class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp ile İletişim
+                                </a>
+                            </div>
+                            <div class="mb-3">
+                                <h6><i class="fas fa-clock text-success me-2"></i>Çalışma Saatleri</h6>
+                                <p class="mb-0">
+                                    Pazartesi - Cuma: 09:00 - 18:00<br>
+                                    Cumartesi: 09:00 - 14:00<br>
+                                    Pazar: Kapalı
+                                </p>
+                            </div>
+                            <div class="map-container">
+                                <div class="text-center text-muted">
+                                    <i class="fas fa-map-marked-alt fa-3x mb-3"></i>
+                                    <p class="mb-0">Google Maps</p>
+                                    <small>Esenyurt Şubesi Harita Konumu</small>
+                                </div>
+                                <!-- Google Maps embed code buraya eklenecek -->
+                                <!--
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=ESENYURT_MAP_CODE" 
+                                    width="100%" 
+                                    height="400" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Florya Şubesi -->
+                    <div class="branch-card" onclick="toggleBranch('florya')">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="mb-2"><i class="fas fa-map-marker-alt text-success me-2"></i>Florya Şubesi</h4>
+                                <p class="text-muted mb-0">Florya, İstanbul</p>
+                            </div>
+                            <i class="fas fa-chevron-down text-success"></i>
+                        </div>
+                        <div id="florya-details" class="branch-details">
+                            <hr>
+                            <div class="mb-3">
+                                <h6><i class="fas fa-map-marker-alt text-success me-2"></i>Adres</h6>
+                                <p class="mb-0">Florya Mah. Deniz Sok. No: 42/B<br>34153 Florya / İstanbul</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6><i class="fas fa-phone text-success me-2"></i>Telefon</h6>
+                                <p class="mb-0">
+                                    <a href="tel:+902129876543" class="text-decoration-none">+90 212 987 65 43</a><br>
+                                    <a href="tel:+905559876543" class="text-decoration-none">+90 555 987 65 43</a>
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <h6><i class="fab fa-whatsapp text-success me-2"></i>WhatsApp</h6>
+                                <a href="https://wa.me/905559876543" target="_blank" class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp ile İletişim
+                                </a>
+                            </div>
+                            <div class="mb-3">
+                                <h6><i class="fas fa-clock text-success me-2"></i>Çalışma Saatleri</h6>
+                                <p class="mb-0">
+                                    Pazartesi - Cuma: 09:00 - 18:00<br>
+                                    Cumartesi: 09:00 - 14:00<br>
+                                    Pazar: Kapalı
+                                </p>
+                            </div>
+                            <div class="map-container">
+                                <div class="text-center text-muted">
+                                    <i class="fas fa-map-marked-alt fa-3x mb-3"></i>
+                                    <p class="mb-0">Google Maps</p>
+                                    <small>Florya Şubesi Harita Konumu</small>
+                                </div>
+                                <!-- Google Maps embed code buraya eklenecek -->
+                                <!--
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=FLORYA_MAP_CODE" 
+                                    width="100%" 
+                                    height="400" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Rehabilitasyon Merkezi. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="index.html" class="text-white me-3">Ana Sayfa</a>
+                    <a href="hizmetlerimiz.html" class="text-white me-3">Hizmetlerimiz</a>
+                    <a href="hakkimizda.html" class="text-white me-3">Hakkımızda</a>
+                    <a href="iletisim.html" class="text-white">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.');
+            this.reset();
+        });
+
+        // Branch toggle function
+        function toggleBranch(branchId) {
+            const details = document.getElementById(branchId + '-details');
+            const card = details.closest('.branch-card');
+            const chevron = card.querySelector('.fa-chevron-down');
+            
+            // Close all other branches
+            document.querySelectorAll('.branch-details').forEach(detail => {
+                if (detail.id !== branchId + '-details') {
+                    detail.classList.remove('active');
+                    detail.closest('.branch-card').classList.remove('active');
+                    detail.closest('.branch-card').querySelector('.fa-chevron-down').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current branch
+            if (details.classList.contains('active')) {
+                details.classList.remove('active');
+                card.classList.remove('active');
+                chevron.style.transform = 'rotate(0deg)';
+            } else {
+                details.classList.add('active');
+                card.classList.add('active');
+                chevron.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Check if URL has #subeler hash and open first branch
+        window.addEventListener('load', function() {
+            if (window.location.hash === '#subeler') {
+                setTimeout(() => {
+                    toggleBranch('esenyurt');
+                    document.getElementById('subeler').scrollIntoView({ behavior: 'smooth' });
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>
