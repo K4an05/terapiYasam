@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehabilitasyon Merkezi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/150x50?text=Logo" alt="Rehabilitasyon Merkezi Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">İletişim</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Randevu Al</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-primary text-white d-flex align-items-center" style="background-image: url('https://via.placeholder.com/1920x600?text=Rehabilitasyon+Gorseli'); background-size: cover; background-position: center; height: 60vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Sağlığınızı Geri Kazanın</h1>
+                    <p class="lead">Profesyonel rehabilitasyon hizmetlerimizle hayatınızı kolaylaştırıyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Hizmetlerimiz</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 service-card" data-service-id="1">
+                        <div class="card-body text-center">
+                            <i class="fas fa-dumbbell fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Fizik Tedavi</h5>
+                            <p class="card-text">Vücut fonksiyonlarını iyileştirmek için uzman fizik tedavi programları.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 service-card" data-service-id="2">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hand-paper fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Ergoterapi</h5>
+                            <p class="card-text">Günlük yaşam aktivitelerini kolaylaştırmak için ergoterapi hizmetleri.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 service-card" data-service-id="3">
+                        <div class="card-body text-center">
+                            <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Nörolojik Rehabilitasyon</h5>
+                            <p class="card-text">Nörolojik sorunlar için kapsamlı rehabilitasyon programları.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Blog</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 blog-card" data-blog-id="1">
+                        <img src="https://via.placeholder.com/400x250?text=Blog+1" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Rehabilitasyonun Faydaları</h5>
+                            <p class="card-text">Rehabilitasyon sürecinin vücut ve zihin sağlığı üzerindeki olumlu etkileri.</p>
+                            <a href="#" class="btn btn-outline-primary">Devamını Oku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 blog-card" data-blog-id="2">
+                        <img src="https://via.placeholder.com/400x250?text=Blog+2" class="card-img-top" alt="Blog 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Evde Egzersizler</h5>
+                            <p class="card-text">Ev ortamında yapabileceğiniz basit rehabilitasyon egzersizleri.</p>
+                            <a href="#" class="btn btn-outline-primary">Devamını Oku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 blog-card" data-blog-id="3">
+                        <img src="https://via.placeholder.com/400x250?text=Blog+3" class="card-img-top" alt="Blog 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Beslenme ve Rehabilitasyon</h5>
+                            <p class="card-text">Rehabilitasyon sürecinde doğru beslenmenin önemi.</p>
+                            <a href="#" class="btn btn-outline-primary">Devamını Oku</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">İletişim</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h4>Adres ve İletişim Bilgileri</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                    <p><i class="fas fa-phone"></i> +90 216 123 45 67</p>
+                    <p><i class="fas fa-envelope"></i> info@rehabilitasyonmerkezi.com</p>
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.0000000000005!2d28.978358315415!3d41.008237979299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9be7c7b7b7b%3A0x1234567890abcdef!2sRehabilitasyon%20Merkezi!5e0!3m2!1str!2str!4v1234567890!5m2!1str!2str" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>İletişim Formu</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ad Soyad</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-posta</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mesaj</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Rehabilitasyon Merkezi. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#home" class="text-white me-3">Anasayfa</a>
+                    <a href="#services" class="text-white me-3">Hizmetlerimiz</a>
+                    <a href="#blog" class="text-white me-3">Blog</a>
+                    <a href="#contact" class="text-white">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
